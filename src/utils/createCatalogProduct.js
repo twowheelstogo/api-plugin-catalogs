@@ -11,7 +11,7 @@ import getCatalogProductMedia from "./getCatalogProductMedia.js";
  */
 export function xformVariant(variant, variantMedia) {
   const primaryImage = variantMedia[0] || null;
-
+  console.log("xfoorm variante jaja", variant);
   return {
     odooProduct: variant.odooProduct,
     categoryVariant: variant.categoryVariant,
