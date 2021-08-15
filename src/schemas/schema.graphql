@@ -198,6 +198,12 @@ type CatalogProductVariant implements CatalogProductOrVariant & Node {
   "The height of the product variant, if it has physical dimensions"
   height: Float
 
+  "Product on the invoice system"
+  odooProduct: Int
+
+  "category on the invoice system"
+  categoryVariant: Int
+
   "The position of this variant among other variants at the same level of the product-variant-option hierarchy"
   index: Int!
 

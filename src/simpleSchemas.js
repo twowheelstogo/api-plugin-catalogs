@@ -185,6 +185,20 @@ export const SocialMetadata = new SimpleSchema({
  * @property {Number} width optional, default value: `0`
  */
 export const CatalogProductOption = new SimpleSchema({
+  "odooProduct": {
+    type: Number,
+    label: "Odoo Product",
+    min: 0,
+    optional: true,
+    defaultValue: 0
+  },
+  "categoryVariant": {
+    type: Number,
+    label: "Category Variant",
+    min: 0,
+    optional: true,
+    defaultValue: 0
+  },
   "_id": {
     type: String,
     label: "Catalog product variant Id"
