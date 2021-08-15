@@ -13,6 +13,8 @@ export function xformVariant(variant, variantMedia) {
   const primaryImage = variantMedia[0] || null;
 
   return {
+    odooProduct: variant.odooProduct,
+    categoryVariant: variant.categoryVariant,
     _id: variant._id,
     attributeLabel: variant.attributeLabel,
     barcode: variant.barcode,
